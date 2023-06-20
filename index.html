@@ -1,38 +1,128 @@
-<html>
+<!DOCTYPE HTML>
+<html lang="ja">
+
 <head>
-    <title>ここがタイトル情報です</title>
+  <meta charset="UTF-8">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="./scroll.js"></script>
+  <script type="text/javascript" src="./js/jump.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300;700&family=M+PLUS+2:wght@900" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+  <title>Asa Tomita</title>
 </head>
 <body>
-       <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
-                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+  <div id="wrapper">
+    <!--header-->
+    <header>
+      <h1>Murakami Natsuki</h1>
+    </header>
+
+    <!-- nav-->
+
+    <main>
+      <h2 class="h6" align="center">Profile</h2>
+      <section id = "profile">
+        <!--プロフィール-->
+        <div id="About_me">
+            <div class = "card-img">
+              <img src="img/natsuki.JPG">
+                <!-- </div> -->
             </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <h3 class="mb-4">UI/UX Designer & Web Developer</h3>
-                    <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum. Amet dolor stet lorem diam dolor justo et dolor dolor dolor</p>
-                    <div class="row mb-3">
-                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Kate Winslet</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">1 April 1990</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Master</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">10 Years</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+012 345 6789</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">info@example.com</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">123 Street, New York, USA</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>
+            <div class = "card-text">
+                <article>
+                    <h2>名前 / Name</h2>
+                    <p>村上夏輝 / Murakami Natsuki</p>
+                    <h2>所属 / Current Position</h2>
+                    <p>
+                        <a href="http://www.ocha.ac.jp/index.html">お茶の水女子大学</a> 人間文化創成科学研究科 理学専攻 修士2年 <a href="https://bekkilab.notion.site/">戸次研究室</a>
+                    </p>
+                    <p>
+                        2nd master's student in Department of Advanced Sciences, Graduate School of Humanities and Sciences, Ochanomizu University Bekki Laboratory.
+                    </p>
+                    <h2>
+                        住所 / address
+                    </h2>
+                    <p>
+                        〒112-8610 東京都文京区大塚2-1-1 理学部3号館308 / 2-1-1 Otsuka, Bunkyo-ku, Tokyo 112-8610, Japan
+                    </p>
+                    <p>
+                        email: murakami.natsuki [at] is.ocha.ac.jp
+                    </p>
+                    <div class = "sample">
+                      <table align="center" border="0">
+                        <tr>
+                          <td><a href="https://www.linkedin.com/in/natsuki-murakami-233253217"><img src="img/linkedin.png" alt= "linkedin"></a></td>
+                          <td><a href="https://twitter.com/nana077861371"><img src="img/twitter.png" alt= "Twitter"></a></td>
+                        </tr>
+                      </table>
                     </div>
-                    <a href="" class="btn btn-outline-primary mr-4">Hire Me</a>
-                    <a href="" class="btn btn-outline-primary">Learn More</a>
-                </div>
+                </article>
             </div>
         </div>
-    </div>
-    <!-- About End -->
+      </section>
+      <section id = "research" class="jump_point">
+        <h2 class="h6" align="center">Research </h2>
+        <article>
+            <h2>研究分野 / Research Interest</h2>
+            <p>自然言語処理 / Natural Language Processing</p>
+            <h2>キーワード / Keywords for Research</h2>
+            <ul>
+                <p>
+                <li>固有表現抽出 /Named Entity Recognition</li>
+                <li>含意関係認識 / Recognizing Textual Entailment </li>
+            </p></ul>
+            <h2>Publications</h2>
+            <h3>2023/03: 症例テキスト間の論理推論における病名知識補完の試み
+言語処理学会第29回年次大会, 発表論文集, , B6-3巻, 2023年03月, 村上夏輝, 石田真捺, 谷中瞳, 戸次大介, 原著, 研究論文（研究会，シンポジウム資料等)</h3>
+            <h3>2023/06 病名知識の公理補完を用いた症例テキスト間の論理推論
+第37回人工知能学会全国大会,論文集, , , 2L5-GS-3-05巻, 2023年06月, 村上夏輝, 石田真捺, 高橋優太, 谷中瞳, 戸次大介, , 原著, 研究論文（研究会，シンポジウム資料等）, 共著者
+</h3>
+            <ul>
+            </ul>
+        </article>
+      </section>
+      <section id = "language">
+        <h2 class="h6" align="center">Language</h2>
+        <article>
+            <li>Japanese: Native</li>
+            <li>English: Proficient (TOEIC:895)</li>
+            <li>Chinese: HSK 4th grade</li>
+        </article>
+      </section>
+      <section id = "education">
+        <h2 class="h6" align="center">Education</h2>
+        <article>
+            <h2>2022/04 - 現在</h2>
+            <p>お茶の水女子大学大学院 人間文化創成科学研究科 理学専攻 情報科学コース / Master's degree of Science from Ochanomizu University, Tokyo, JAPAN</p>
+            <h2>2018/04 - 2022/03</h2>
+            <p>お茶の水女子大学 理学部 情報科学科 / Bachelor's degree of Science from Ochanomizu University, Tokyo, JAPAN</p>
+            <h2>2015/04 - 2018/03</h2>
+            <p>渋谷教育学園幕張高校</p>
+        </article>
+      </section>
+      <section id = "internship">
+        <h2 class="h6" align="center">Internship</h2>
+        <article>
+            <h2>2023/02 : パナソニックホールディングス</h2>
+            <p>研究開発職(自然言語処理)</p>
+            <h2>2019/05-2019/07 : Google 夏季エンジニアリングトレーニングプログラム(STEP) 育成コース</h2>
+            <h1>Others</h1>
+            <h2>2022/11-2022/12 : LINE株式会社　ビジネスコンテスト</h2>
+        </article>
+      </section>
+      <article>
+        <p>icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+      </article>
+    </main>
+    <!--/#wrapper-->
+  </div>
+  <footer>
+    <p>&copy;2023 Natsuki Murakami All Rights Reserved. </p>
+  </footer>
 </body>
+
 </html>
